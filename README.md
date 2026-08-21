@@ -78,10 +78,16 @@ The source data ends on 9 December 2011. December 2011 is therefore incomplete a
 
 ## Query-result screenshots
 
-## [Monthly sales trend]<img width="647" height="457" alt="Monthly_sales" src="https://github.com/user-attachments/assets/43d0fd9d-bf89-4b4f-956a-2f3e507e1377" />
+## Monthly sales trend
+
+<img width="647" height="457" alt="Monthly_sales" src="https://github.com/user-attachments/assets/43d0fd9d-bf89-4b4f-956a-2f3e507e1377" />
 
 
-## [Month-on-month sales change]<img width="412" height="462" alt="Sales_Month" src="https://github.com/user-attachments/assets/1e8bca66-c5c9-4c6c-926d-5922181c9bbd" />
+## Month-on-month sales change
+
+<img width="412" height="462" alt="Sales_Month" src="https://github.com/user-attachments/assets/1e8bca66-c5c9-4c6c-926d-5922181c9bbd" />
 
 
-## [Best-performing physical products]<img width="600" height="365" alt="best_products_updated" src="https://github.com/user-attachments/assets/77b3a831-56c7-440b-9230-96907e4a0cae" />
+## Best-performing physical products
+
+<img width="600" height="365" alt="best_products_updated" src="https://github.com/user-attachments/assets/77b3a831-56c7-440b-9230-96907e4a0cae" />
