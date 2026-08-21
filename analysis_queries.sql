@@ -4,8 +4,9 @@ select invoice_month,
 round(sum(sales),2) as total_sales,
 count (distinct invoice_no) as total_order
 from sales_transactions
+where invoice_date < '2011-12-01'
 group by invoice_month
-order by invoice_month;
+order by total_sales desc;
 
 select * from sales_transactions;
 
@@ -18,6 +19,24 @@ from sales_transactions
 where description is NOT NULL
 group by description
 order by total_sales desc
+LIMIT 10;
+-- Best-performing physical products by sales value
+SELECT
+    description,
+    ROUND(SUM(sales), 2) AS total_sales,
+    SUM(quantity) AS units_sold
+FROM sales_transactions
+WHERE description IS NOT NULL
+  AND UPPER(description) NOT IN (
+      'DOTCOM POSTAGE',
+      'POSTAGE',
+      'MANUAL',
+      'CARRIAGE',
+      'BANK CHARGES'
+  )
+GROUP BY description
+ORDER BY total_sales DESC
+LIMIT 10;
 
 -- Highest-value customers
 
@@ -60,3 +79,4 @@ SELECT
     ) AS month_on_month_change_pct
 FROM monthly_sales
 ORDER BY invoice_month;
+
